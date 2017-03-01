@@ -7,18 +7,25 @@
   <body>
     <h1></h1>
     <form action=""><br/>
-      <label for="nombre">Ingresa tu nombre:</label>
-        <input class = "input" id="nombre" type="text" name="nombre" required/><br/><br/>
-      <label for="num1">Ingresa un numero del 1 - 10:</label>
-        <input class = "input" id="num1" type="number" name="num1" required/><br/><br/>
-      <label for="operacion">Ingresa tu operación</label>
-        <input class = "input" id="operacion" type="text" name="operacion" required/><br/><br/>
-      <label for="num2">Ingresa el segundo numero</label>
-        <input class = "input" id="num2" type="number" name="num2" required/><br/><br/>
-
-
+      <div class="">
+          <label for="nombre">Ingresa tu nombre:</label><br>
+            <input class = "input" id="nombre" type="text" name="nombre" /><br/><br/>
+      </div>
+      <div class="">
+          <label for="num1">Ingresa un número del 1 - 10:</label><br>
+            <input class = "input" id="num1" type="number" name="num1" min="1" max="10" /><br/><br/>
+      </div>
+      <div class="">
+          <label for="operacion">Ingresa tu operación:</label><br>
+            <input class = "input" id="operacion" type="text" name="operacion" /><br/><br/>
+      </div>
+      <div class="">
+          <label for="num2">Ingresa el segundo número:</label><br>
+            <input class = "input" id="num2" type="number" name="num2" min="1" max="10" /><br/><br/>
+      </div><br>
+      <input id = "operar" type="button" name="button" value="operar">
 </form>
-
+<div id="records"></div>
     <script src="js/main.js" charset="utf-8"></script>
   </body>
 </html>

@@ -39,7 +39,7 @@ operar.addEventListener('click', function datos(event){
   while(respuesta == true);
         records.innerHTML = print(resultado);});
 
-function calculadora(operacion,num1,num2)
+function calculadora(operacion,num1,num2){
   switch(operacion){ case "suma"          :return num1+num2     ;break;
                      case "resta"         :return  num1-num2    ;break;
                      case "multiplicacion":return  num1*num2    ;break;

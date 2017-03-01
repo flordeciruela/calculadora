@@ -12,6 +12,7 @@ operar.addEventListener('click', function datos(event){
   event.preventDefault();
   var inputGeneral= document.getElementsByClassName('input');
   do {
+        var num1 = document.getElementById("num1");
         var num2 = document.getElementById("num2");
         var operacion = document.getElementById("operacion");
         if(inputGeneral[0].value.length==0 || inputGeneral[1].value.length==0 || inputGeneral[2].value.length==0 || inputGeneral[3].value.length==0){
@@ -21,10 +22,12 @@ operar.addEventListener('click', function datos(event){
         var respuesta = confirm("¿Desea hacer otra operación?");
         resultado =calculadora(operacion.value.toString(),parseInt(num1.value),parseInt(num2.value));
         if(respuesta ==true){
-          operar1 = prompt("Ingrese la operacion");
+          operacion1 = prompt("Ingrese la operacion");
           num21 = prompt("Ingrese el segundo numero");
           num21 = parseInt(num21);
+          resultado21 = parseInt(resultado);
           document.getElementById("operacion").value = operacion1;
+          document.getElementById("num1").value = resultado21;
           document.getElementById("num2").value = num21;
         }
       }

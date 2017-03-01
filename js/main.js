@@ -1,4 +1,21 @@
 
 // Recibiendo datos:
-var nombre = ("¿Cuál es tu nombre?");
-var valor = ("Ingresa un numero del 1 al 10:");
+var operacion= document.getElementById("operacion").value;
+var num1 = document.getElementById("num1").value;
+switch(operacion){
+  case "suma":
+  return num1+num2;
+  break;
+
+  case "resta":
+  return  num1-num2;
+    break;
+
+  case "multiplicacion":
+  return  num1*num2;
+    break;
+
+  case "division":
+  return  num1/num2;
+    break;
+  }

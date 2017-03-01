@@ -13,7 +13,7 @@ operar.addEventListener('click', function datos(event){
   var inputGeneral= document.getElementsByClassName('input');
   do {
         var num2 = document.getElementById("num2");
-        var operar = document.getElementById("operar");
+        var operacion = document.getElementById("operacion");
         if(inputGeneral[0].value.length==0 || inputGeneral[1].value.length==0 || inputGeneral[2].value.length==0 || inputGeneral[3].value.length==0){
           alert("Falta Completar");
         }
@@ -24,7 +24,7 @@ operar.addEventListener('click', function datos(event){
           operar1 = prompt("Ingrese la operacion");
           num21 = prompt("Ingrese el segundo numero");
           num21 = parseInt(num21);
-          document.getElementById("operar").value = operar1;
+          document.getElementById("operacion").value = operacion1;
           document.getElementById("num2").value = num21;
         }
       }
